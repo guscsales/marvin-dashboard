@@ -11,9 +11,60 @@
   </head>
 
   <body>
-    
+    <div id="wrapper">
+      <header>
+        <div class="logo"></div>
 
-    <app-root>Loading...</app-root>
+        <span class="greetings">Welcome Gustavo</span>
+
+        <ul class="header-list">
+          <li>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <div class="dropdown-menu dropdown-menu-right">
+              Some Content
+            </div>
+          </li>
+          <li class="user-opts dropdown">
+            <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Gustavo Sales</span>
+              <img src="https://scontent-gru2-1.cdninstagram.com/t51.2885-19/s150x150/12558415_1668881950035986_508864783_a.jpg" alt="User Options" />
+            </div>
+            <div class="dropdown-menu dropdown-menu-right">
+              <h6 class="dropdown-header">Dropdown header</h6>
+              <button class="dropdown-item" type="button">Action</button>
+              <button class="dropdown-item" type="button">Another action</button>
+              <button class="dropdown-item" type="button">Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item" type="button">Logout</button>
+            </div>
+          </li>
+        </ul>
+      </header>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              Users
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <app-root>Loading...</app-root>
+      </main>
+    </div>
   </body>
 
 </html>

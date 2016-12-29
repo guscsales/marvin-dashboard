@@ -4,3 +4,129 @@ body{
     font-weight: $mainWeight;
     color: $darkGray;
 }
+
+#wrapper{
+
+    > header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height: $headerSize;
+        line-height: $headerSize;
+        background-color: $darkGray;
+        color:#fff;
+
+        .logo{
+            float:left;
+            width: $navSize;
+            height: $headerSize;
+            background-color: $darkerGray; 
+            margin-right: 20px;
+        }
+
+        .greetings{
+            text-transform: uppercase;
+        }
+
+        .header-list{
+            float:right;
+            padding:0;
+            margin:0;
+            list-style: none;
+
+            li{
+                float:left;
+                width: 50px;
+                height: $headerSize;
+                text-align: center;
+                margin-right: 10px;
+                color: $middleDarkGray;
+                transition: all 0.15s;
+                cursor: pointer;
+
+                &:hover{
+                    color:#fff;
+                    text-decoration: none;
+                    border-bottom: 2px solid $mainColor;
+                }
+
+                &:last-child{
+                    margin-right: 20px;
+                }
+                
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                }
+
+                &.user-opts{
+                    width:auto;
+
+                    span{
+                        color:#fff;
+                        margin-right: 10px;
+                    }
+
+                    &:hover{
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.main-nav{
+    position: fixed;
+    top:$headerSize;
+    left:0;
+    width:$navSize;
+    height: 100%;
+    background-color: $darkGray;
+
+    ul{
+        padding:0;
+        margin:0;
+
+        li{
+            float:left;
+            width:100%;
+            text-align: center;
+
+            a{
+                float:left;
+                width: 100%;
+                margin: 20px 0;
+                padding: 5px 0;
+                color: $middleDarkGray;
+                transition: all 0.2s ease;
+                font-size: 15px;
+                font-weight: 300;
+                
+                i{
+                    display: inline-block;
+                    width:100%;
+                    font-size: 17px;
+                }                
+
+                &:hover{
+                    color:#fff;
+                    text-decoration: none;
+                }
+
+                &.active{
+                    border-left: 2px solid $mainColor;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+
+.main-content{
+    margin-top: $headerSize;
+    margin-left: $navSize;
+}
