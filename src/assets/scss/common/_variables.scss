@@ -2,7 +2,7 @@
 
 //  COLORS
 $mainColor: #FC4F3F;
-$mainComplementColor: #3FFC94;
+$mainComplementColor: #34AF6B;
 
 $lightGray: #F5F5F5;
 $gray: #EFEFEF;
@@ -17,6 +17,18 @@ $mainSize: 16px;
 $mainWeight: normal;
 
 
-//  HEADER AND NAV
+//  MAIN HEADER
 $headerSize: 80px;
+
+//  MAIN NAV
 $navSize: 130px;
+$subWidth: 200px;
+
+//  MAIN FOOTER
+$footerSize: 30px;
+
+//  MAIN CONTENT
+$mainSpacingVertical: 40px;
+$mainSpacingHorizontal: 20px;
+$mainSpacingVerticalHalf: $mainSpacingVertical / 2;
+$mainSpacing: $mainSpacingVertical $mainSpacingHorizontal;
