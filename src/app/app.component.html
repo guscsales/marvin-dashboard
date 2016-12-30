@@ -1,21 +1,82 @@
-<header>
-    <h1>
-        Dashboard
-        <small>Some subtitle</small>
-    </h1>
-</header>
-
-<!--
-<div class="pre-section">
-    <i class="fa fa-home" aria-hidden="true"></i> <a href="/">Home</a> 
-    <i class="fa fa-angle-right" aria-hidden="true"></i> Dashboard
-</div>
--->
-
-<section>
-    <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-4">
-            
+<div id="wrapper">
+  <header>
+    <div class="logo"></div>
+    <span class="greetings">Bem vindo Gustavo</span>
+    <ul class="header-list">
+      <li data-toggle="tooltip" data-placement="bottom" title="Preferências">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </li>
+      <li class="user-opts dropdown">
+        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span>Gustavo Sales</span>
+          <img src="https://scontent-gru2-1.cdninstagram.com/t51.2885-19/s150x150/12558415_1668881950035986_508864783_a.jpg" alt="User Options"
+          />
         </div>
-    </div>
-</section>
+        <div class="dropdown-menu dropdown-menu-right">
+          <h6 class="dropdown-header">Dropdown header</h6>
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item" type="button">Logout</button>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <a routerLink="/">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <i class="fa fa-user" aria-hidden="true"></i> Usuários
+        </a>
+        <ul class="sub">
+          <li>
+            <a routerLink="/users">Gerenciar</a>
+          </li>
+          <li>
+            <a href="#">Novo</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-users" aria-hidden="true"></i> Clientes
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Produtos
+        </a>
+        <ul class="sub">
+          <li>
+            <a href="#">Gerenciar</a>
+          </li>
+          <li>
+            <a href="#">Novo</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Finanças
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-cog" aria-hidden="true"></i> Preferências
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    M.A.R.V.I.N. - Criado por <a href="http://hebsix.com.br" target="_blank">Agência Hebsix</a> - Copyright &copy; 2017
+  </footer>
+</div>

@@ -14,6 +14,11 @@ a{
         text-decoration: none;
         color:$mainComplementColor;
     }
+
+    &:focus,
+    &:active{
+        text-decoration: none;
+    }
 }
 
 ::-moz-selection {
@@ -222,7 +227,7 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
 
-    app-root{
+    > *{
         > header{
             padding: $mainSpacing;
             background-color: $gray;
