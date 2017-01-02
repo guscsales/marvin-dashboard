@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  templateUrl: './user.component.html'
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  public title: string = 'Usuários';
+  public subTitle: string = 'Faça buscas, filtre resultados e gerencie de acordo com as opções';
+  
 
-  ngOnInit() {
+  constructor(private titleService: Title) { 
+    titleService.setTitle(this.title);
   }
+
+  ngOnInit() {}  
 
 }

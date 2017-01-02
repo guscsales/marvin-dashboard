@@ -11,8 +11,6 @@
         function setActive(routerLink){
             var $link = $('.main-nav [routerlink="' + routerLink + '"]');
 
-            console.log($link)
-
             $('.main-nav [href]').removeClass('active');
             $link.addClass('active');
 
@@ -27,9 +25,11 @@
         setActive(window.location.pathname);
     }
 
-
-
-    initTooltip();
-    initActiveMenu();
+    this.Main = {
+        init: function(){
+            initTooltip();
+            initActiveMenu();
+        }
+    } 
     
 })(window, document);

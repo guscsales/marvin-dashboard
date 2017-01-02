@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  public title: string = 'Dashboard';
 
-  constructor() { }
+  constructor(private titleService: Title) { 
+    titleService.setTitle(this.title);
+  }
 
   ngOnInit() {
   }
