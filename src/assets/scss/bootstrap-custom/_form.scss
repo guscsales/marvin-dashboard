@@ -29,3 +29,8 @@ label{
     font-family: Arial;
     color:$dangerColor;
 }
+
+select.form-control:not([size]):not([multiple]){
+    height: 30px;
+    padding: 5px 7px;
+}
