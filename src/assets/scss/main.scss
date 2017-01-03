@@ -1,3 +1,7 @@
+//  GLOBAL VARIABLES
+@import 'common/variables';
+
+
 //  BOURBON
 @import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 
@@ -19,12 +23,19 @@
 @import '../../../node_modules/bootstrap/scss/buttons';
 @import '../../../node_modules/bootstrap/scss/dropdown';
 @import '../../../node_modules/bootstrap/scss/tooltip';
+@import '../../../node_modules/bootstrap/scss/pagination';
 
 //  Custom
 @import 'bootstrap-custom/dropdown';
 @import 'bootstrap-custom/tooltip';
+@import 'bootstrap-custom/table';
+@import 'bootstrap-custom/button';
+@import 'bootstrap-custom/form';
+@import 'bootstrap-custom/pagination';
+
+
 
 //  M.A.R.V.I.N.
 @import 'common/fonts';
-@import 'common/variables';
+@import 'common/helpers';
 @import 'common/common';

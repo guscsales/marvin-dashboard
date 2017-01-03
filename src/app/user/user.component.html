@@ -1,66 +1,80 @@
 <header>
-    <h1>
-        {{title}}
-        <small>{{subTitle}}</small>
-    </h1>
+  <h1>
+    {{title}}
+    <small>{{subTitle}}</small>
+  </h1>
 </header>
 
 <section>
-    <div class="row">
+  <div class="panel">
+
+    <div class="panel-header">
+      <h2 class="panel-title ng-binding"><i class="fa fa-list" aria-hidden="true"></i> Listagem</h2>
+    </div>
+
+    <div class="panel-body">
+      <div class="row">
         <div class="col-xs-12">
-            
-          <table class="table">
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Login</th>
-              <th>E-mail</th>
-              <th>Data de Cadastro</th>              
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gustavo Sales Santos</td>
-              <td>salesgu</td>
-              <td>gustavo@hebsix.com.br</td>
-              <td>30/12/2016</td>
-            </tr>
+
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>E-mail</th>
+                <th>Data de Cadastro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a routerLink="/user/detail/1" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Mais Detalhes"><i class="fa fa-info" aria-hidden="true"></i></a>
+                  <a routerLink="/user/edit/1" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <a routerLink="/user/1" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Desativar"><i class="fa fa-times" aria-hidden="true"></i></a>
+                  <span class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <span class="dropdown-menu">
+                      <h6 class="dropdown-header">Mais opções</h6>
+                      <button class="dropdown-item" type="button">Action</button>
+                      <button class="dropdown-item" type="button">Another action</button>                      
+                    </span>
+                  </span>
+                </td>
+                <td>1</td>
+                <td>Gustavo Sales Santos</td>
+                <td>salesgu</td>
+                <td>gustavo@hebsix.com.br</td>
+                <td>30/12/2016</td>
+              </tr>
+            </tbody>
           </table>
 
+          <nav class="wrapper-pagination">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
+      </div>
     </div>
+  </div>
 </section>

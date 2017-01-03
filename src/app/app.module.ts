@@ -8,13 +8,15 @@ import { Routing }  from './app.routing';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserNewComponent } from './user-new/user-new.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    DashboardComponent
+    DashboardComponent,
+    UserNewComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +29,5 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

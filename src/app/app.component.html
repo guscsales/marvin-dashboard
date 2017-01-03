@@ -1,7 +1,7 @@
 <div id="wrapper">
   <header>
     <div class="logo"></div>
-    <span class="greetings">Bem vindo Gustavo</span>
+    <span class="greetings">{{APP_NAME}} - Bem vindo Gustavo</span>
     <ul class="header-list">
       <li data-toggle="tooltip" data-placement="bottom" title="Preferências">
         <i class="fa fa-cog" aria-hidden="true"></i>
@@ -39,37 +39,9 @@
             <a routerLink="/users">Gerenciar</a>
           </li>
           <li>
-            <a href="#">Novo</a>
+            <a routerLink="/user/new">Novo</a>
           </li>
         </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-users" aria-hidden="true"></i> Clientes
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Produtos
-        </a>
-        <ul class="sub">
-          <li>
-            <a href="#">Gerenciar</a>
-          </li>
-          <li>
-            <a href="#">Novo</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Finanças
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-cog" aria-hidden="true"></i> Preferências
-        </a>
       </li>
     </ul>
   </nav>

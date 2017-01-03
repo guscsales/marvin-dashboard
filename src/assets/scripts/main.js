@@ -1,8 +1,12 @@
 (function(window, document){
 
-    var initTooltip = function(){
+    var initTooltip = function(container){
         //  Initialize tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+
+        if(!container)
+            $('[data-toggle="tooltip"]').tooltip();
+        else
+            $(container + ' [data-toggle="tooltip"]').tooltip();
     }
 
 
@@ -25,10 +29,17 @@
         setActive(window.location.pathname);
     }
 
+    var watchMainContent = function(){
+        $('.main-content').bind("DOMNodeInserted",function(){
+            initTooltip('.main-content');
+        });
+    }
+
     this.Main = {
         init: function(){
             initTooltip();
             initActiveMenu();
+            watchMainContent();            
         }
     } 
     
