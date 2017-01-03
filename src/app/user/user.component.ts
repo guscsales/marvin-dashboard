@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
 
+import { AppComponent } from '../app.component';
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html'
@@ -12,7 +14,7 @@ export class UserComponent implements OnInit {
   
 
   constructor(private titleService: Title) { 
-    titleService.setTitle(this.title);
+    titleService.setTitle(new AppComponent().getTitle(this.title));
   }
 
   ngOnInit() {}  

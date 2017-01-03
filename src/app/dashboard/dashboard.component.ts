@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
 
+import { AppComponent } from '../app.component';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -10,7 +12,7 @@ export class DashboardComponent implements OnInit {
   public title: string = 'Dashboard';
 
   constructor(private titleService: Title) { 
-    titleService.setTitle(this.title);
+    titleService.setTitle(new AppComponent().getTitle(this.title));
   }
 
   ngOnInit() {

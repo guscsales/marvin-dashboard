@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public APP_NAME: string = 'Sweet Dream Box';
+
+  public getTitle(title: string){
+    return title + ' - ' + this.APP_NAME;
+  }
+
 }

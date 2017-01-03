@@ -1,6 +1,7 @@
-import { MarvinDashboardPage } from './../../../e2e/app.po';
 import { Component, OnInit } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
+
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-user-new',
@@ -13,7 +14,7 @@ export class UserNewComponent implements OnInit {
   
 
   constructor(private titleService: Title) { 
-    titleService.setTitle(this.title);
+    titleService.setTitle(new AppComponent().getTitle(this.title));
   }
 
   ngOnInit() {
