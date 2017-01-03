@@ -50,6 +50,7 @@ a{
             height: $headerSize;
             background-color: $darkerGray; 
             margin-right: $mainSpacingHorizontal;
+            @include bg-image('../images/logo-collapsed@2x.png', 40px, 40px);
         }
 
         .greetings{
